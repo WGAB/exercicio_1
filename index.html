@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Integração</title>
-</head>
-<body>
-  <h1>Exemplo para Formulário de Cadastro de Produtos</h1>
-  <p>As informações aqui inseridas servem apenas como exercício de integração nos códigos de HTML e CSS, levando em conta as tags "input" e as propriedades "name", "id", "label" entre outras... </p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro 1</title>
+  </head>
+  <body>
+    <div>
+      <h1>Exemplo para Formulário de Cadastro de Produtos</h1>
+      <p>
+        As informações aqui inseridas servem apenas como exercício de integração
+        nos códigos de HTML e CSS, levando em conta as tags "input" e as
+        propriedades "name", "id", "label" entre outras...
+      </p>
+    </div>
+
+    <form>
+      <fildset>
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" />
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" name="sobrenome" id="sobrenome" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label>
+            <strong>A que se aplica o seu orçamento?</strong>
+            <input type="radio" name="devform1" value="frontend" checked />Uso
+            Pessoal(Pessoa Física)
+            <input type="radio" name="devform1" value="backend" />Uso
+            Comercial(Pessoa Jurídica)
+            <input type="radio" name="devform1" value="devops" />Setor
+            Público(Licitação/Cotação)
+          </label>
+        </div>
+      </fildset>
+      <div>
+        <label>Selecione o Tipo de Item</label>
+        <select id="itens">
+          <option selected disabled value="">Selecione</option>
+          <option value="hdd">HDD</option>
+          <option value="ssd">SSD</option>
+          <option value="monitor">Monitor</option>
+          <option value="teclado">Teclado</option>
+          <option value="mouse">Mouse</option>
+          <option value="mousepad">Mouse-Pad</option>
+          <option value="capinhas">Capinhas para Celular</option>
+          <option value="LGA1155-1156">Placa mãe LGA1155/1156</option>
+          <option value="fonte">Fonte ATX Desktop</option>
+        </select>
+      </div>
+      <fildset>
+        <div>
+          <label>Para que tipo de solução se aplica o seu Orçamento?</label>
+          <label for="sol1">1. Reparo de computador pessoal.</label>
+          <input type="checkbox" name="sol1" id="sol1" value="1" />
+          <label for="sol2">2. Reparo de computador do trabalho.</label>
+          <input type="checkbox" name="sol2" id="sol2" value="2" />
+          <label for="sol3">3. Presente para alguém.</label>
+          <input type="checkbox" name="sol3" id="sol3" value="3" />
+          <label for="sol4">4. Comparação de Preços</label>
+          <input type="checkbox" name="sol4" id="sol4" value="4" />
+          <label for="sol5">5. Proposta de parceria.</label>
+          <input type="checkbox" name="sol5" id="sol5" value="5" />
+          <label for="sol6">6. Orçamento para empresa.</label>
+          <input type="checkbox" name="sol6" id="sol6" value="6" />
+          <label for="sol7">7. Orçamento pessoal sem compromisso.</label>
+          <input type="checkbox" name="sol7" id="sol7" value="7" />
+          <label for="sol8">8. Contrato de manutenção.</label>
+          <input type="checkbox" name="sol8" id="sol8" value="8" />
+        </div>
+      </fildset>
+      <br /><br />
+      <div>
+        <label>Conte um pouco sobre o problema.</label>
+        <textarea
+          row="30"
+          style="height: 26em"
+          name="problem"
+          id="problem"
+        ></textarea>
+      </div>
+    </form>
+
+    <input type="submit" name="button" value="Enviar" />
+  </body>
 </html>
