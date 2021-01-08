@@ -6,9 +6,9 @@
     <title>Cadastro 1</title>
   </head>
   <body>
-    <div>
-      <h1>Exemplo para Formulário de Cadastro de Produtos</h1>
-      <p>
+    <div class="campo">
+      <h1 id="titulo1">Exemplo para Formulário de Cadastro de Produtos</h1>
+      <p id="p1">
         As informações aqui inseridas servem apenas como exercício de integração
         nos códigos de HTML e CSS, levando em conta as tags "input" e as
         propriedades "name", "id", "label" entre outras...
@@ -16,18 +16,18 @@
     </div>
 
     <form>
-      <fildset>
-        <div>
+      <fildset class="grupo">
+        <div class="campo">
           <label for="nome">Nome</label>
           <input type="text" name="nome" id="nome" />
           <label for="sobrenome">Sobrenome</label>
           <input type="text" name="sobrenome" id="sobrenome" />
         </div>
-        <div>
+        <div class="campo">
           <label for="email">Email</label>
           <input type="email" name="email" id="email" />
         </div>
-        <div>
+        <div class="campo">
           <label>
             <strong>A que se aplica o seu orçamento?</strong>
             <input type="radio" name="devform1" value="frontend" checked />Uso
@@ -39,7 +39,7 @@
           </label>
         </div>
       </fildset>
-      <div>
+      <div class="campo">
         <label>Selecione o Tipo de Item</label>
         <select id="itens">
           <option selected disabled value="">Selecione</option>
@@ -54,8 +54,8 @@
           <option value="fonte">Fonte ATX Desktop</option>
         </select>
       </div>
-      <fildset>
-        <div>
+      <fildset class="grupo">
+        <div class="campo">
           <label>Para que tipo de solução se aplica o seu Orçamento?</label>
           <label for="sol1">1. Reparo de computador pessoal.</label>
           <input type="checkbox" name="sol1" id="sol1" value="1" />
